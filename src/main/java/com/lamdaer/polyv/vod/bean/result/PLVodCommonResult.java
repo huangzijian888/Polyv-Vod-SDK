@@ -18,10 +18,10 @@ public class PLVodCommonResult extends PLVodBaseResult {
     private Object data;
 
     public PLVodCommonResult(int code, String status, String message, Object data) {
-        this.data = data;
+        this.setData(data);
         super.code = code;
         super.status = status;
-        super.message = message;
+        super.setMessage(message);
     }
 
     public Object getData() {
@@ -29,7 +29,7 @@ public class PLVodCommonResult extends PLVodBaseResult {
     }
 
     public void setData(Object data) {
-        this.data = data;
+        this.data = "".equals(data) ? "null" : data;
     }
 
     @Override

@@ -65,7 +65,7 @@ public abstract class PLVodBaseResult {
     }
 
     public void setMessage(String message) {
-        this.message = message;
+        this.message = "".equals(message) ? "null" : message;
     }
 
     @Override
