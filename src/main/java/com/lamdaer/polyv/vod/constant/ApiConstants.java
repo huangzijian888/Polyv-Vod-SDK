@@ -13,6 +13,11 @@ public class ApiConstants {
      */
     public static final String GET_USER_SPACE_TRAFFIC_USAGE = "http://api.polyv.net/v2/user/{userid}/main";
 
+    /**
+     * 根据授权播放开关状态查询视频
+     */
+    public static final String QUERY_VIDEO_BY_AUTHORIZATION_STATE = "http://api.polyv.net/v2/video/{userid}/list";
+
     private ApiConstants() {
     }
 
