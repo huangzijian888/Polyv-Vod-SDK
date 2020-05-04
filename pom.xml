@@ -6,7 +6,7 @@
 
     <groupId>com.lamdaer</groupId>
     <artifactId>polyv-vod-sdk</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <name>POLYV-VOD-SDK</name>
     <description>保利威云点播JAVA工具包</description>
     <url>http://www.polyv.net</url>
