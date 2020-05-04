@@ -23,6 +23,11 @@ public class ApiConstants {
      */
     public static final String QUERY_VIDEO_BY_TITLE_OR_CLASSIFICATION = "http://api.polyv.net/v2/video/{userid}/search";
 
+    /**
+     * 按标签查找视频
+     */
+    public static final String QUERY_BY_TAG = "http://api.polyv.net/v2/video/{userid}/search";
+
     private ApiConstants() {
     }
 
