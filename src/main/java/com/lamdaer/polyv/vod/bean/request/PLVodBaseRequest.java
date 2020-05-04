@@ -3,6 +3,7 @@ package com.lamdaer.polyv.vod.bean.request;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.digest.DigestUtil;
+import com.lamdaer.polyv.vod.enumeration.ErrorCodeEnum;
 
 import java.util.*;
 
@@ -92,7 +93,11 @@ public abstract class PLVodBaseRequest {
         }
         for (String key : parameter.keySet()) {
             String value = parameter.get(key) + "";
-            if (value.equalsIgnoreCase("null") || StrUtil.hasBlank(value) || key.equalsIgnoreCase("secretKey") || key.equalsIgnoreCase("sign")) {
+            if (value.equalsIgnoreCase("null")
+                    || StrUtil.hasBlank(value)
+                    || key.equalsIgnoreCase("secretKey")
+                    || key.equalsIgnoreCase("sign")
+                    || value.equals(String.valueOf(ErrorCodeEnum.DEFAULT.getCode()))) {
                 continue;
             }
             result.put(key, value);
