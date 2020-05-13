@@ -73,7 +73,7 @@ public abstract class PLVodBaseRequest {
      * @param secretKey  点播后台->设置->API接口->secretkey
      * @return 签名值
      */
-    private String generateSign(Map<String, Object> parameters, String secretKey) {
+    protected String generateSign(Map<String, Object> parameters, String secretKey) {
         String concatStr = concatParameter(parameters);
         String plain = concatStr + secretKey;
         String encrypted = DigestUtil.sha1Hex(plain);
@@ -86,7 +86,7 @@ public abstract class PLVodBaseRequest {
      * @param parameter 需要过滤的参数集合
      * @return 过滤后的参数集合
      */
-    private Map<String, Object> paraFilter(Map<String, Object> parameter) {
+    protected Map<String, Object> paraFilter(Map<String, Object> parameter) {
         Map<String, Object> result = new HashMap<>();
         if (parameter == null || parameter.size() <= 0) {
             return result;
