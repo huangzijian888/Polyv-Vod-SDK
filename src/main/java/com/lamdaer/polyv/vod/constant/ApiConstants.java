@@ -28,6 +28,12 @@ public class ApiConstants {
      */
     public static final String QUERY_BY_TAG = "http://api.polyv.net/v2/video/{userid}/search";
 
+    /**
+     * 根据vid批量修改视频的授权播放开关状态
+     * http://dev.polyv.net/2017/videoproduct/v-api/v-api-vmanage/v-api-vmanage-edit/set-authplay/
+     */
+    public static final String BULK_EDIT_AUTHORIZATION_STATE = "http://api.polyv.net/v2/video/{userid}/authplay-status";
+
     private ApiConstants() {
     }
 
