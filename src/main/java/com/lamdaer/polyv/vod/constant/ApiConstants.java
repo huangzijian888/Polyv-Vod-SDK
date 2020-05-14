@@ -34,6 +34,11 @@ public class ApiConstants {
      */
     public static final String BULK_EDIT_AUTHORIZATION_STATE = "http://api.polyv.net/v2/video/{userid}/authplay-status";
 
+    /**
+     * 获取单个视频的打点信息
+     */
+    public static final String GET_KEY_INFORMATION = "http://api.polyv.net/v2/video/{userid}/keyframe/{vid}";
+
     private ApiConstants() {
     }
 
