@@ -44,6 +44,11 @@
             <email>huangzijian@lamdaer.com</email>
             <url>https://github.com/huangzijian888</url>
         </developer>
+        <developer>
+            <name>deludashu</name>
+            <email>wangxiaojian9264@163.com</email>
+            <url>https://github.com/wangxiaojian9527</url>
+        </developer>
     </developers>
 
     <distributionManagement>
