@@ -6,7 +6,7 @@ package com.lamdaer.polyv.vod.bean.result;
  * @author lamdaer
  * createTime 2020/05/03
  */
-public abstract class PLVodBaseResult {
+public abstract class PolyvVodBaseResult {
 
     /**
      * <pre>
@@ -70,7 +70,7 @@ public abstract class PLVodBaseResult {
 
     @Override
     public String toString() {
-        return "PLVodBaseResult{" +
+        return "PolyvVodBaseResult{" +
                 "code=" + code +
                 ", status='" + status + '\'' +
                 ", message='" + message + '\'' +

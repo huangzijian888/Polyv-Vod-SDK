@@ -2,7 +2,7 @@ package com.lamdaer.polyv.vod.bean.request.editVideo;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
-import com.lamdaer.polyv.vod.bean.request.PLVodBaseRequest;
+import com.lamdaer.polyv.vod.bean.request.PolyvVodBaseRequest;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +14,7 @@ import java.util.Map;
  * @author lamdaer
  * createTime 2020/5/13
  */
-public class PolyvVodBulkEditAuthorizationStateRequest extends PLVodBaseRequest {
+public class PolyvVodBulkEditAuthorizationStateRequest extends PolyvVodBaseRequest {
 
     /**
      * playauth默认值
@@ -99,8 +99,9 @@ public class PolyvVodBulkEditAuthorizationStateRequest extends PLVodBaseRequest 
 
     @Override
     public String toString() {
-        return "BulkEditAuthorizationStateRequest{" +
-                "vids='" + vids + '\'' +
+        return "PolyvVodBulkEditAuthorizationStateRequest{" +
+                "BYTE_DEFAULT=" + BYTE_DEFAULT +
+                ", vids='" + vids + '\'' +
                 ", playauth=" + playauth +
                 ", userId='" + userId + '\'' +
                 ", secretKey='" + secretKey + '\'' +

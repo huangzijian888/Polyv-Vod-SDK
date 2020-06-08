@@ -13,7 +13,7 @@ import java.util.*;
  * @author lamdaer
  * createTime 2020/05/03
  */
-public abstract class PLVodBaseRequest {
+public abstract class PolyvVodBaseRequest {
 
     /**
      * <pre>
@@ -51,7 +51,7 @@ public abstract class PLVodBaseRequest {
      */
     protected String sign;
 
-    public PLVodBaseRequest(String userId, String secretKey) {
+    public PolyvVodBaseRequest(String userId, String secretKey) {
         this.userId = userId;
         this.secretKey = secretKey;
         this.ptime = System.currentTimeMillis();
@@ -160,7 +160,7 @@ public abstract class PLVodBaseRequest {
 
     @Override
     public String toString() {
-        return "PLVodBaseRequest{" +
+        return "PolyvVodBaseRequest{" +
                 "userId='" + userId + '\'' +
                 ", secretKey='" + secretKey + '\'' +
                 ", ptime=" + ptime +

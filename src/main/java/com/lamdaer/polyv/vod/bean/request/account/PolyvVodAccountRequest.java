@@ -1,6 +1,6 @@
 package com.lamdaer.polyv.vod.bean.request.account;
 
-import com.lamdaer.polyv.vod.bean.request.PLVodBaseRequest;
+import com.lamdaer.polyv.vod.bean.request.PolyvVodBaseRequest;
 
 /**
  * 获取账号相关信息的请求类
@@ -8,7 +8,7 @@ import com.lamdaer.polyv.vod.bean.request.PLVodBaseRequest;
  * @author lamdaer
  * createTime 2020/05/03
  */
-public class PLVodAccountRequest extends PLVodBaseRequest {
+public class PolyvVodAccountRequest extends PolyvVodBaseRequest {
 
     /**
      * 字段名：要查询的日期
@@ -18,11 +18,11 @@ public class PLVodAccountRequest extends PLVodBaseRequest {
      */
     private String date;
 
-    public PLVodAccountRequest(String userId, String secretKey) {
+    public PolyvVodAccountRequest(String userId, String secretKey) {
         super(userId, secretKey);
     }
 
-    public PLVodAccountRequest(String userId, String secretKey, String date) {
+    public PolyvVodAccountRequest(String userId, String secretKey, String date) {
         super(userId, secretKey);
         this.date = date;
     }
@@ -37,7 +37,7 @@ public class PLVodAccountRequest extends PLVodBaseRequest {
 
     @Override
     public String toString() {
-        return "PLVodAccountRequest{" +
+        return "PolyvVodAccountRequest{" +
                 "date='" + date + '\'' +
                 ", userId='" + userId + '\'' +
                 ", secretKey='" + secretKey + '\'' +

@@ -6,7 +6,7 @@ package com.lamdaer.polyv.vod.bean.result;
  * @author lamdaer
  * createTime 2020/05/03
  */
-public class PLVodCommonResult extends PLVodBaseResult {
+public class PolyvVodCommonResult extends PolyvVodBaseResult {
 
     /**
      * <pre>
@@ -17,7 +17,7 @@ public class PLVodCommonResult extends PLVodBaseResult {
      */
     private Object data;
 
-    public PLVodCommonResult(int code, String status, String message, Object data) {
+    public PolyvVodCommonResult(int code, String status, String message, Object data) {
         this.setData(data);
         super.code = code;
         super.status = status;
@@ -34,7 +34,7 @@ public class PLVodCommonResult extends PLVodBaseResult {
 
     @Override
     public String toString() {
-        return "PLVodCommonResult{" +
+        return "PolyvVodCommonResult{" +
                 "data=" + data +
                 ", code=" + code +
                 ", status='" + status + '\'' +

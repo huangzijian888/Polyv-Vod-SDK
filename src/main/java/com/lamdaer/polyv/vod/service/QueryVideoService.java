@@ -3,7 +3,7 @@ package com.lamdaer.polyv.vod.service;
 import com.lamdaer.polyv.vod.bean.request.queryVideos.QueryByAuthorizationStateRequest;
 import com.lamdaer.polyv.vod.bean.request.queryVideos.QueryByTagRequest;
 import com.lamdaer.polyv.vod.bean.request.queryVideos.QueryByTitleOrClassificationRequest;
-import com.lamdaer.polyv.vod.bean.result.PLVodCommonResult;
+import com.lamdaer.polyv.vod.bean.result.PolyvVodCommonResult;
 
 /**
  * 查找视频 Service
@@ -19,7 +19,7 @@ public interface QueryVideoService {
      * @param request 查询请求
      * @return 查询结果
      */
-    PLVodCommonResult queryByAuthorizationState(QueryByAuthorizationStateRequest request);
+    PolyvVodCommonResult queryByAuthorizationState(QueryByAuthorizationStateRequest request);
 
     /**
      * 按标题或分类查找视频
@@ -27,7 +27,7 @@ public interface QueryVideoService {
      * @param request 查询请求
      * @return 查询结果
      */
-    PLVodCommonResult queryByTitleOrClassification(QueryByTitleOrClassificationRequest request);
+    PolyvVodCommonResult queryByTitleOrClassification(QueryByTitleOrClassificationRequest request);
 
     /**
      * 按标签查找视频
@@ -35,6 +35,6 @@ public interface QueryVideoService {
      * @param request 查询请求
      * @return 查询结果
      */
-    PLVodCommonResult queryByTag(QueryByTagRequest request);
+    PolyvVodCommonResult queryByTag(QueryByTagRequest request);
 
 }

@@ -1,7 +1,7 @@
 package com.lamdaer.polyv.vod.service;
 
 import com.lamdaer.polyv.vod.bean.request.editVideo.PolyvVodBulkEditAuthorizationStateRequest;
-import com.lamdaer.polyv.vod.bean.result.PLVodCommonResult;
+import com.lamdaer.polyv.vod.bean.result.PolyvVodCommonResult;
 
 /**
  * 编辑视频 Service
@@ -19,5 +19,5 @@ public interface PolyvVodEditVideoService {
      * @param request
      * @return 修改后的结果
      */
-    PLVodCommonResult bulkEditAuthorizationState(PolyvVodBulkEditAuthorizationStateRequest request);
+    PolyvVodCommonResult bulkEditAuthorizationState(PolyvVodBulkEditAuthorizationStateRequest request);
 }

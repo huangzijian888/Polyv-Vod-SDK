@@ -1,6 +1,6 @@
 package com.lamdaer.polyv.vod.bean.request.queryVideos;
 
-import com.lamdaer.polyv.vod.bean.request.PLVodBaseRequest;
+import com.lamdaer.polyv.vod.bean.request.PolyvVodBaseRequest;
 
 /**
  * 按标签查找视频
@@ -8,7 +8,7 @@ import com.lamdaer.polyv.vod.bean.request.PLVodBaseRequest;
  * @author lamdaer
  * createTime 2020/5/4
  */
-public class QueryByTagRequest extends PLVodBaseRequest {
+public class QueryByTagRequest extends PolyvVodBaseRequest {
 
     /**
      * <pre>

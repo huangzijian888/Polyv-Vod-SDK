@@ -1,6 +1,6 @@
 package com.lamdaer.polyv.vod.bean.request.queryVideos;
 
-import com.lamdaer.polyv.vod.bean.request.PLVodBaseRequest;
+import com.lamdaer.polyv.vod.bean.request.PolyvVodBaseRequest;
 import com.lamdaer.polyv.vod.enumeration.ErrorCodeEnum;
 
 /**
@@ -9,7 +9,7 @@ import com.lamdaer.polyv.vod.enumeration.ErrorCodeEnum;
  * @author lamdaer
  * createTime 2020/5/4
  */
-public class QueryByTitleOrClassificationRequest extends PLVodBaseRequest {
+public class QueryByTitleOrClassificationRequest extends PolyvVodBaseRequest {
 
     /**
      * <pre>
